@@ -1,5 +1,7 @@
 module Effects
   def self.reverse
-    # TODO: 実装はあとで
+    lambda do |words|
+      words.split(' ').map(&:reverse).join(' ')
+    end
   end
 end
